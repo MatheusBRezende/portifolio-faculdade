@@ -1,53 +1,109 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>Portfólio | Matheus Bazarello</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <a href="#" class="logo">MB</a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul class="nav-menu">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <section class="hero">
+    <main>
+      <section class="hero">
         <h1>Matheus Bazarello</h1>
         <h2>Programador WEB</h2>
-        <p>Gosto de criar experiências web incríveis e funcionais. Transformo ideias em realidade digital.</p>
-    </section>
+        <p>
+          Gosto de criar experiências web incríveis e funcionais. Transformo
+          ideias em realidade digital.
+        </p>
+        <a href="#projetos" class="btn">Ver Projetos</a>
+      </section>
 
-    <section id="sobre">
+      <section id="sobre">
         <h2>Sobre Mim</h2>
-        <p>Sou um desenvolvedor web apaixonado por tecnologia e inovação. Me dedico ao aprendizado contínuo e ao desenvolvimento de soluções web eficientes.</p>
-        <p>Gosto de ler sobre tecnologia e acompanhar noticias relacionadas. Acredito que o equilíbrio entre vida pessoal e profissional é essencial para a criatividade e produtividade.</p>
-    </section>
-
-    <section id="projetos">
-        <h2>Meus Projetos</h2>
-        <div>
-            <h3>Cabuloso News</h3>
-            <p>Um site criado para mostrar as noticias e partidas de forma dinâmica do Cruzeiro Esporte Clube</p>
+        <div class="sobre-container">
+          <div class="sobre-texto">
+            <p>
+              👋 Olá! Sou um desenvolvedor web apaixonado por transformar ideias
+              em experiências digitais criativas e funcionais.
+            </p>
+            <p>
+              🚀 Tenho interesse constante em aprender novas tecnologias e
+              aplicar boas práticas no desenvolvimento de soluções web.
+            </p>
+            <p>
+              🌱 Fora da programação, gosto de acompanhar notícias de tecnologia
+              e acredito no equilíbrio entre vida pessoal e profissional para
+              manter a criatividade.
+            </p>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section id="contato">
+      <section id="projetos">
+        <h2>Meus Projetos</h2>
+        <div class="projetos-grid">
+          <div class="projeto-card">
+            <h3>Cabuloso News</h3>
+            <p>
+              Um site criado para mostrar as noticias e partidas de forma
+              dinâmica do Cruzeiro Esporte Clube.
+            </p>
+            <p><strong>Tecnologias:</strong> HTML5, CSS3, JavaScript</p>
+            <div class="projeto-links">
+              <a href="https://cruzeiro.onrender.com/" target="_blank">Ver</a>
+              <a href="https://github.com/MatheusBRezende/cabuloso_news" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato">
         <h2>Contato</h2>
-        <p>Entre em contato comigo para conversarmos sobre possíveis colaborações!</p>
+        <p>
+          Entre em contato comigo para conversarmos sobre possíveis
+          colaborações!
+        </p>
         <p>Email: matheus@exemplo.com</p>
         <p>Telefone: (11) 99999-9999</p>
-    </section>
+      </section>
+    </main>
 
     <footer>
-        <div class="redes-sociais">
-            <a href="#">LinkedIn</a>
-            <a href="#">GitHub</a>
-        </div>
+      <div class="redes-sociais">
+        <a href="https://github.com/seu-usuario" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://linkedin.com/in/seu-usuario" target="_blank">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+      </div>
+      <p>&copy; 2025 Matheus Bazarello. Todos os direitos reservados.</p>
     </footer>
-</body>
+  </body>
 </html>
