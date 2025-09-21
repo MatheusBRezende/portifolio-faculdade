@@ -24,27 +24,41 @@ body {
   background-color: var(--background);
 }
 
+/* Container principal para centralizar conteúdo */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 header {
   position: fixed;
   top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90%;
-  max-width: 800px;
+  left: 0;
+  right: 0;
   z-index: 1000;
   padding: 0.5rem 0;
   transition: all 0.3s ease;
-  border-radius: 50px;
+}
+
+header .container {
+  display: flex;
+  justify-content: center;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 90%;
+  max-width: 800px;
   padding: 0 2rem;
+  border-radius: 50px;
+  position: relative;
 }
 
-header::before {
+nav::before {
   content: "";
   position: absolute;
   top: 0;
@@ -146,14 +160,12 @@ main {
 }
 
 section {
-  padding: 5rem 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: 5rem 0;
 }
 
 .hero {
   text-align: center;
-  padding: 8rem 2rem;
+  padding: 8rem 0;
   background: linear-gradient(
     135deg,
     var(--primary-color),
@@ -162,7 +174,12 @@ section {
   color: var(--light-text);
   border-radius: 20px;
   margin: 2rem auto;
-  max-width: 1200px;
+}
+
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero h1 {
@@ -171,7 +188,7 @@ section {
 }
 
 .hero h2 {
-color: white;
+  color: white;
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
   font-weight: 400;
@@ -234,6 +251,9 @@ h2 {
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .projeto-card:hover {
@@ -247,12 +267,13 @@ h2 {
 
 .projeto-card p {
   margin-bottom: 1rem;
+  flex-grow: 1;
 }
 
 .projeto-links {
   display: flex;
   gap: 1rem;
-  margin-top: 1.5rem;
+  margin-top: auto;
 }
 
 .projeto-links a {
@@ -272,8 +293,27 @@ h2 {
 }
 
 #contato {
-    text-align: center;
-    padding: 3rem 2rem;
+  text-align: center;
+}
+
+.contato-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contato-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.contato-info p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 #contato p {
@@ -283,22 +323,32 @@ h2 {
 
 footer {
   text-align: center;
-  padding: 2rem;
+  padding: 2rem 0;
   background: var(--text-color);
   color: var(--light-text);
   margin-top: 2rem;
   border-radius: 20px 20px 0 0;
 }
 
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .redes-sociais {
   margin-bottom: 1rem;
+  display: flex;
+  gap: 1.5rem;
 }
 
 .redes-sociais a {
   color: var(--light-text);
   text-decoration: none;
-  margin: 0 1rem;
   transition: color 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .redes-sociais a:hover {
@@ -306,9 +356,18 @@ footer {
 }
 
 @media (max-width: 768px) {
-  header {
+  .container {
     width: 95%;
-    top: 10px;
+    padding: 0 10px;
+  }
+
+  header .container {
+    width: 100%;
+  }
+  
+  nav {
+    width: 95%;
+    padding: 0 1rem;
   }
 
   .nav-menu {
@@ -319,6 +378,7 @@ footer {
     width: 70%;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 5rem 2rem;
     transition: right 0.3s ease;
     border-radius: 20px;
@@ -368,7 +428,16 @@ footer {
   }
 
   section {
-    padding: 3rem 1.5rem;
+    padding: 3rem 0;
+  }
+  
+  .projetos-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .redes-sociais {
+    flex-direction: column;
+    gap: 1rem;
   }
 }
 

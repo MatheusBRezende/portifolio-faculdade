@@ -16,94 +16,112 @@
   </head>
   <body>
     <header>
-      <nav>
-        <a href="#" class="logo">MB</a>
-        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-        <label for="nav-toggle" class="nav-toggle-label">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-        <ul class="nav-menu">
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
+      <div class="container">
+        <nav>
+          <a href="#" class="logo">MB</a>
+          <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+          <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <ul class="nav-menu">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
       <section class="hero">
-        <h1>Matheus Bazarello</h1>
-        <h2>Programador WEB</h2>
-        <p>
-          Gosto de criar experiências web incríveis e funcionais. Transformo
-          ideias em realidade digital.
-        </p>
-        <a href="#projetos" class="btn">Ver Projetos</a>
+        <div class="container">
+          <h1>Matheus Bazarello</h1>
+          <h2>Programador WEB</h2>
+          <p>
+            Gosto de criar experiências web incríveis e funcionais. Transformo
+            ideias em realidade digital.
+          </p>
+          <a href="#projetos" class="btn">Ver Projetos</a>
+        </div>
       </section>
 
       <section id="sobre">
-        <h2>Sobre Mim</h2>
-        <div class="sobre-container">
-          <div class="sobre-texto">
-            <p>
-              👋 Olá! Sou um desenvolvedor web apaixonado por transformar ideias
-              em experiências digitais criativas e funcionais.
-            </p>
-            <p>
-              🚀 Tenho interesse constante em aprender novas tecnologias e
-              aplicar boas práticas no desenvolvimento de soluções web.
-            </p>
-            <p>
-              🌱 Fora da programação, gosto de acompanhar notícias de tecnologia
-              e acredito no equilíbrio entre vida pessoal e profissional para
-              manter a criatividade.
-            </p>
+        <div class="container">
+          <h2>Sobre Mim</h2>
+          <div class="sobre-container">
+            <div class="sobre-texto">
+              <p>
+                👋 Olá! Sou um desenvolvedor web apaixonado por transformar ideias
+                em experiências digitais criativas e funcionais.
+              </p>
+              <p>
+                🚀 Tenho interesse constante em aprender novas tecnologias e
+                aplicar boas práticas no desenvolvimento de soluções web.
+              </p>
+              <p>
+                🌱 Fora da programação, gosto de acompanhar notícias de tecnologia
+                e acredito no equilíbrio entre vida pessoal e profissional para
+                manter a criatividade.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       <section id="projetos">
-        <h2>Meus Projetos</h2>
-        <div class="projetos-grid">
-          <div class="projeto-card">
-            <h3>Cabuloso News</h3>
-            <p>
-              Um site criado para mostrar as noticias e partidas de forma
-              dinâmica do Cruzeiro Esporte Clube.
-            </p>
-            <p><strong>Tecnologias:</strong> HTML5, CSS3, JavaScript</p>
-            <div class="projeto-links">
-              <a href="https://cruzeiro.onrender.com/" target="_blank">Ver</a>
-              <a href="https://github.com/MatheusBRezende/cabuloso_news" target="_blank">GitHub</a>
+        <div class="container">
+          <h2>Meus Projetos</h2>
+          <div class="projetos-grid">
+            <div class="projeto-card">
+              <h3>Cabuloso News</h3>
+              <p>
+                Um site criado para mostrar as noticias e partidas de forma
+                dinâmica do Cruzeiro Esporte Clube.
+              </p>
+              <p><strong>Tecnologias:</strong> HTML5, CSS3, JavaScript</p>
+              <div class="projeto-links">
+                <a href="https://cruzeiro.onrender.com/" target="_blank">Ver</a>
+                <a href="https://github.com/MatheusBRezende/cabuloso_news" target="_blank">GitHub</a>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <section id="contato">
-        <h2>Contato</h2>
-        <p>
-          Entre em contato comigo para conversarmos sobre possíveis
-          colaborações!
-        </p>
-        <p>Email: matheus@exemplo.com</p>
-        <p>Telefone: (11) 99999-9999</p>
+        <div class="container">
+          <h2>Contato</h2>
+          <div class="contato-content">
+            <p>
+              Entre em contato comigo para conversarmos sobre possíveis
+              colaborações!
+            </p>
+            <div class="contato-info">
+              <p><i class="fas fa-envelope"></i> Email: matheus@exemplo.com</p>
+              <p><i class="fas fa-phone"></i> Telefone: (11) 99999-9999</p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
     <footer>
-      <div class="redes-sociais">
-        <a href="https://github.com/seu-usuario" target="_blank">
-          <i class="fab fa-github"></i> GitHub
-        </a>
-        <a href="https://linkedin.com/in/seu-usuario" target="_blank">
-          <i class="fab fa-linkedin"></i> LinkedIn
-        </a>
+      <div class="container">
+        <div class="footer-content">
+          <div class="redes-sociais">
+            <a href="https://github.com/seu-usuario" target="_blank">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://linkedin.com/in/seu-usuario" target="_blank">
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+          </div>
+          <p>&copy; 2025 Matheus Bazarello. Todos os direitos reservados.</p>
+        </div>
       </div>
-      <p>&copy; 2025 Matheus Bazarello. Todos os direitos reservados.</p>
     </footer>
   </body>
 </html>
